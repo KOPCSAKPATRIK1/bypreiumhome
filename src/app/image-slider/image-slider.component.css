@@ -1,6 +1,9 @@
 .gallery-container {
     width: 80%;
     margin: auto;
+    border-radius: 8px;
+    border: 5px solid #c8a47b;
+    padding: 10px;
   }
   
   .main-image-container {
@@ -29,13 +32,13 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgb(200, 164, 123);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
+    background-color: rgba(200, 164, 123, 0.302);
+    border: solid;
   }
   
   .next {
