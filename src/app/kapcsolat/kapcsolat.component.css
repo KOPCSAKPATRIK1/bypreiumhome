@@ -2,11 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .contact-container {
@@ -16,6 +15,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     width: 100%;
+    margin: 20px auto;
 }
 
 .contact-info {
@@ -27,16 +27,16 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 10px;
     font-weight: bold;
     color: #c8a47b;
-    font-size: large
+    font-size: large;
 }
 
 .icon {
     font-size: 50px;
-    margin-right: 50px;
+    margin-right: 20px;
     color: #3de0d2;
 }
 
@@ -46,3 +46,8 @@ body {
     border-radius: 8px;
     border: 5px solid #c8a47b;
 }
+
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 95%;
+    }}

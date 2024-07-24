@@ -1,0 +1,77 @@
+.gallery-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .main-image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+  
+  .thumbnail img.selected, .thumbnail img:hover {
+    opacity: 1;
+    border: 2px solid #000;
+  }
+  

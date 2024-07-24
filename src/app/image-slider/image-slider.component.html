@@ -1,0 +1,15 @@
+<div class="gallery-container">
+    <div class="main-image-container">
+      <img [src]="selectedImage.src" class="main-image">
+      <div class="image-info">
+      </div>
+      <button class="prev" (click)="prevImage()">&#10094;</button>
+      <button class="next" (click)="nextImage()">&#10095;</button>
+    </div>
+    <div class="thumbnail-container">
+      <div class="thumbnail" *ngFor="let image of images" (click)="selectImage(image)">
+        <img [src]="image.src" [class.selected]="image === selectedImage">
+      </div>
+    </div>
+  </div>
+  

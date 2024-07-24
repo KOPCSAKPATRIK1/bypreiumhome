@@ -3,6 +3,10 @@ import { RouterModule, Route } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { KapcsolatComponent } from './kapcsolat/kapcsolat.component';
 import { IngatlanjainkComponent } from './ingatlanjaink/ingatlanjaink.component';
+import { NavbarComponent } from "./navbar/navbar.component";
+import { FooterComponent } from "./footer/footer.component";
+import { ImageSliderComponent } from "./image-slider/image-slider.component"
+import { AppComponent } from "./app.component";;
 
 const routes: Route[] = [
     {
