@@ -22,12 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    justify-items: center;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 10px;
     font-weight: bold;
     color: #c8a47b;
