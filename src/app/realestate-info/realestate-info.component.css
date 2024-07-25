@@ -1,0 +1,26 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 5px solid #c8a47b;
+  padding: 10px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #c8a47b;
+  font-size: large;
+}
+
+.info-title {
+  color: #3de0d2;
+
+}

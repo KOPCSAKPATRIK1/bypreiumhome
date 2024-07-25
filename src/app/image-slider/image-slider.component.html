@@ -1,12 +1,13 @@
 <div class="gallery-container">
-    <div class="main-image-container">
-        <img [src]="selectedImage.src" class="main-image">
-      <button class="prev" (click)="prevImage()">&#10094;</button>
-      <button class="next" (click)="nextImage()">&#10095;</button>
-    </div>
-    <div class="thumbnail-container">
-      <div class="thumbnail" *ngFor="let image of images" (click)="selectImage(image)">
-        <img [src]="image.src" [class.selected]="image === selectedImage">
-      </div>
-    </div>
+  <div class="main-image-container">
+    <img [src]="selectedImage.src" class="main-image" (click)="openModal()">
+    <button class="prev" (click)="prevImage()">&#10094;</button>
+    <button class="next" (click)="nextImage()">&#10095;</button>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" [class.show]="isModalOpen" (click)="closeModal()">
+  <span class="close" (click)="closeModal()">&times;</span>
+  <img class="modal-content" [src]="selectedImage.src" id="img01">
 </div>
